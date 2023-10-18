@@ -3,6 +3,10 @@
     <head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gabarito">
         <style type="text/css">
+            html {
+                scroll-behavior: smooth;
+            }
+
             h1 {
                 color: #403d39;
                 text-align: center;
@@ -27,6 +31,24 @@
                 background-color: #D2042D;
                 color: white;
             }
+
+            button {
+				padding: 10px;
+            	border-radius: 70px;
+          		border-style: solid;
+           		border-width: 3px;
+				background-color: rgb(107, 90, 90);
+				opacity: 0.5;
+				color: white;
+				font-family: 'Gabarito';
+				text-align: center;
+			}
+			
+			.scroll {
+				position: fixed;
+				bottom: 5px;
+				right: 10px;
+			}
 
             body {
                 font-family: "Gabarito";
@@ -69,9 +91,22 @@
                 <p>
                     Our goal is for everyone to always have a secure 
                     access to their cellphones without any batterie limitation. 
-                    With our towers, we want to assure that our clients no longer need to worry about their batterie pourcentage.
+                    With our towers, we want to assure that our clients no longer need to worry about their battery percentage.
                 </p> 
             </div>
+            <div class = "scroll">
+				<button type = 'button' id='scrollUp'>^</button>
+				<script>		
+					const scrollButton = document.getElementById('scrollUp');
+					const scrollTop = function() {
+						if (window.scrollY != 0) {
+						window.scrollTo(0, 0);
+						scrollTop();
+						}
+					};
+					scrollButton.addEventListener("click", scrollTop);
+				</script>
+			</div>
         </main>
     </body>
 
