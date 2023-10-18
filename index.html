@@ -10,19 +10,22 @@
             }
 
             a {
-                border: 10px solid black;
+                padding: 10px;
                 border-radius: 100px;
+                border-style: solid;
+                border-width: 3px;
                 text-decoration: none;
                 text-transform: uppercase;
                 font-family: 'Gabarito';
-                background-color: black;
-                color: white;
+                background-color: white;
+                color: #D2042D;
+                border-color: #D2042D;
                 text-align: center;
             }
 
             a:hover {
-                background-color: #B87333;
-                border-color: #B87333;
+                background-color: #D2042D;
+                color: white;
             }
 
             body {
@@ -31,26 +34,41 @@
             }
 
             .positionlinks {
-                transform: translate(500px,20px);
+                transform: translate(10px,20px);
+            }
+
+            .buttonSegment {
+                background: black;
+                width: 100%;
+                height: 60px;
             }
 
         </style>
     </head>
 
     <body>
-        <div class = "positionlinks">
-            <nav>
-                <a href="contact.html">CONTACT US</a>
-                <a href="pricing.html">OUR PLANS</a>  
-            </nav>
-        </div>
-
-        <div>
-            <h1> RAZZ - MAGNETIC CHARGING </h1>
-            <p>
-                The company builds large towers that can electromagnetically charge your phone. These towers act like cell towers and will electromagnetically charge phones wireless that are subscribed to the company’s charging plans. The service offered can also be bundled with data plans that can rival companies like BELL and Rogers.
-            </p>
-        </div>
+        <main>
+            <div class = "buttonSegment">
+                <div class = "positionlinks">
+                    <nav>
+                        <a href="contact.html">CONTACT US</a>
+                        <a href="pricing.html">OUR PLANS</a>
+                        <a href="about.html">ABOUT US</a> 
+                    </nav>
+                </div>
+            </div>
+            <div>
+                <h1> RAZZ - MAGNETIC CHARGING </h1>
+                <p>
+                    The company builds large towers that can electromagnetically charge your phone. These towers act like cell towers and will electromagnetically charge phones wireless that are subscribed to the company’s charging plans. The service offered can also be bundled with data plans that can rival companies like BELL and Rogers.
+                </p>
+                <p>
+                    Our goal is for everyone to always have a secure 
+                    access to their cellphones without any batterie limitation. 
+                    With our towers, we want to assure that our clients no longer need to worry about their batterie pourcentage.
+                </p> 
+            </div>
+        </main>
     </body>
 
 </html>
