@@ -27,6 +27,9 @@
             color: #D2042D;
             border-color: #D2042D;
             text-align: center;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
         }
 
         a:hover {
@@ -59,6 +62,7 @@
             background: #D2042D;
             width: 100%;
             height: 60px;
+            border-radius: 20px;
         }
 
         #searchBar {
@@ -66,10 +70,8 @@
         }
 
         .sidepanel {
-            height: 250px;
-            /* Specify a height */
-            width: 0;
-            /* 0 width - change this with JavaScript */
+            height: 0px;
+            width: 250px;
             position: fixed;
             /* Stay in place */
             z-index: 1;
@@ -79,10 +81,12 @@
             background-color: #D2042D;
             overflow-x: hidden;
             /* Disable horizontal scroll */
-            padding-top: 60px;
+            padding-top: 0px;
             /* Place content 60px from the top */
             transition: 0.5s;
             /* 0.5 second transition effect to slide in the sidepanel */
+            transform: translate(-4px,0px);
+            border-radius: 20px;
         }
 
         /* The sidepanel links */
@@ -96,15 +100,6 @@
         /* When you mouse over the navigation links, change their color */
         .sidepanel a:hover {
             color: #f1f1f1;
-        }
-
-        /* Position and style the close button (top right corner) */
-        .sidepanel .closebtn {
-            position: absolute;
-            top: 0px;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
         }
 
         /* Style the button that is used to open the sidepanel */
@@ -242,14 +237,13 @@
             <button type='button' id="scrollUp" onclick="scrolltop()">^</button>
         </div>
         <div id="mySidepanel" class="sidepanel">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href='about.html'>About Us</a>
             <a href="contact.html">Contact Us</a>
             <a href="pricing.html">Pricing Plans</a>
             <a href="features.html">Features</a>
         </div>
 
-        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <button class="openbtn" onclick="openClose()">&#9776;</button>
     </main>
     <footer>
         &copy; University of Ottawa | Rayane Badaoui & Rayhan Karim & Abbaba Toure & Loic & Victor Situ
