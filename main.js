@@ -1,4 +1,4 @@
-let menuShow = false
+let menuShow = false // This variable tracks whether the menu is currently open or closed
 
 function openClose() {
   if (menuShow) {
@@ -26,3 +26,7 @@ function scrolltop() {
   window.scrollTo(0, 0);
 };
 
+//this fonction logs a message to the console whenever the menu is opened or closed, it does not affect the code but can be helpfull for debugging or monitoring purposes. 
+function logMessage(message) {
+  console.log(message);
+}
