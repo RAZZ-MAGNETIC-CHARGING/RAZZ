@@ -1,5 +1,61 @@
 <html>
 
+    <style type="text/css">
+        .column {
+            float: left;
+            width: 33.33%;
+        }
+
+        p {
+            text-align: center;
+            transform: translate(0px,100px);
+        }
+        h1 {
+            color : white; 
+            background-color: red;
+            text-align: center;
+            border-radius: 100px;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+            margin-bottom: -48px;
+        }
+        h2 {
+            color : white; 
+            background-color: red;
+            text-align: center;
+            border-radius: 100px;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 50px;
+            padding: 10px;
+            transform: translate(0px,100px);
+        }
+        a {
+            position: fixed;
+            padding: 10px;
+            border-radius: 100px;
+            border-style: solid;
+            border-width: 0px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Gabarito';
+            background-color: white;
+            color: #D2042D;
+            border-color: #D2042D;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            transform: translate(30px,0px);
+        }
+        a:hover {
+            background-color: #F88379;
+            color: white;
+        }
+    </style>
+
     <head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gabarito">
         <style>
@@ -18,10 +74,57 @@
             Our Best Offers
         </h1>
 
-        <div class = "backLinks" >
-            <nav>
-                <a href="index.html"> HOME </a>
-            </nav>
+        <div class="buttonSegment">
+            <div class="positionlinks">
+                <nav>
+                    <a href="index.html">HOME</a>
+                </nav>
+            </div>
         </div>
+
+        <div class="row">
+            <div class="column">
+                <h2>
+                    Basic
+                </h2>
+                <p>
+                    $29.99 / Month
+                <p>
+                <p>
+                    10 Full Charge Cycles
+                </p>
+                <p>
+                    Only Magnetic Charging Included
+                </p>
+            </div>
+            <div class="column">
+                <h2>
+                    Standard
+                </h2>
+                <p>
+                    $59.99 / Month
+                <p>
+                <p>
+                    30 Full Charge Cycles
+                </p>
+                <p>
+                    Only Magnetic Charging Included
+                </p>
+            </div>
+            <div class="column">
+                <h2>
+                    Super
+                </h2>
+                <p>
+                    $79.99 / Month
+                <p>
+                <p>
+                    50 Full Charge Cycles
+                </p>
+                <p>
+                    Magnetic Charging and 5 GB Data Plan Included
+                </p>
+            </div>
+        </div> 
     </body>
 </html>
