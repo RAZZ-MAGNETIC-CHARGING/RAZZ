@@ -55,7 +55,10 @@
         }
 
         .positionlinks {
-            transform: translate(10px, 20px);
+            transform: translate(10px, 0px);
+            @media (max-width : 700px  ) {
+                transform: translate(10px, 20px);
+            }
         }
 
         .buttonSegments {
@@ -163,10 +166,10 @@
             background-color: #D2042D;
             padding: 2rem
         }
-        .logoRazz{
+        .logoCompanyRazz{
             transform: translate(400px, -30px);
             @media (min-width : 700px  ) {
-                transform: translate(-300px, -10px);
+                transform: translate(-300px, 12px);
             }
         }
     </style>
@@ -174,6 +177,7 @@
 
 <body>
     <main>
+        <header> 
         <div class="buttonSegments">
             <div class="positionlinks">
                 <nav>
@@ -185,6 +189,7 @@
                 </nav>
             </div>
         </div>
+        </header>  
         <div>
             <h1> RAZZ - MAGNETIC CHARGING </h1>
             <p>
