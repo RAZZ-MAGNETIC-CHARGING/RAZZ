@@ -21,7 +21,7 @@ function closeNav() {
   document.getElementById("mySidepanel").style.paddingTop = "0px";
 }
 
-/*The scrollTop method is already existing, it is why it had not worked, but you can right a new method called scrolltop */
+/*The scrollTop method is already existing, it is why it had not worked, but you can right a new method called scrolltop that will littarelly scroll up the entire page of the website */
 function scrolltop() {
   window.scrollTo(0, 0);
 };
