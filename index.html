@@ -31,6 +31,7 @@
             margin-left: 10px;
             margin-right: 10px;
         }
+        
 
         a:hover {
             background-color: #F88379;
@@ -124,6 +125,7 @@
             /*it appear a hand instead of the default mouse cursor */
             cursor: pointer;
         }
+        
 
         /*when clicking on button*/
         .openbtn:active {
@@ -143,11 +145,21 @@
         #scrollUp:active {
             transform: scale(110%);
         }
-        #tech_tower_ID{
-            border:#D2042D dashed 3px;
-            width: 1000px;
-            height: 500px;
-        }
+        #tech_tower_ID {
+    width: 75%; 
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+}
+
+.divImgTechTower {
+    padding: 20px; 
+    text-align: center; 
+}
+
+
         .divImgTechTower{
             display: flex;
             justify-content: center;
@@ -165,15 +177,22 @@
             color: #f1f1f1;
             background-color: #D2042D;
             padding: 2rem
+            
+            
         }
         .logoCompanyRazz{
+            max-width: 100%;
+             
+            margin-top: 0px; 
             transform: translate(400px, -30px);
             @media (min-width : 700px  ) {
                 transform: translate(-300px, 12px);
             }
         }
+        
     </style>
 </head>
+
 
 <body>
     <main>
@@ -205,7 +224,7 @@
                 percentage.
             </p>
             <div class="divImgTechTower">
-            <img id="tech_tower_ID" src="/tour_Technologique_razz_v1.jpg">
+             <img id="tech_tower_ID" src="tour_Technologique_razz_v1.jpg">
             </div>
             <h2>The Future of Charging</h2>
             <p>Welcome to a world where charging your devices is not just a necessity but an experience. RAZZ is at the
