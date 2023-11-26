@@ -1,0 +1,68 @@
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Team</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin: 20px;
+            }
+    
+            h1 {
+                color: #333;
+            }
+    
+            .team-member {
+                display: inline-block;
+                margin: 20px;
+                position: relative;
+            }
+    
+            .team-member img {
+                max-width: 100%;
+                border-radius: 50%;
+                transition: transform 0.3s ease-in-out;
+            }
+    
+            .team-member:hover img {
+                transform: translateY(-10px);
+            }
+    
+            .member-name {
+                margin-top: 10px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>Our Team</h1>
+    
+        <div class="team-member">
+            <img src="C:\Users\lgagn\Downloads\IMG-8118-Original (1).jpg" alt="Team Member 1">
+            <div class="member-name">Loic Gagnon</div>
+        </div>
+    
+        <div class="team-member">
+            <img src="C:\Users\lgagn\Downloads\9C39F358-836F-4296-970E-99FB24F22BFE.JPG" alt="Team Member 2">
+            <div class="member-name">Abbaba Toure</div>
+        </div>
+    
+        <div class="team-member">
+            <img src="C:\Users\lgagn\OneDrive\Desktop\367990931_707779534628516_9062975651076562292_n.jpg" alt="Team Member 3">
+            <div class="member-name">Rayhan Karim</div>
+        </div>
+    
+        <div class="team-member">
+            <img src="C:\Users\lgagn\OneDrive\Desktop\405139945_6882371208479452_643751978424126070_n.jpg" alt="Team Member 4">
+            <div class="member-name">Victor Situ</div>
+        </div>
+
+        <div class="team-member">
+            <img src="C:\Users\lgagn\OneDrive\Desktop\rayane.jpg" alt="Team Member 4">
+            <div class="member-name">Rayane B.</div>
+        </div>
+    </body>
+<html>
